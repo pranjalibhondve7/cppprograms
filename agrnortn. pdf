@@ -1,0 +1,132 @@
+#include<conio.h>
+#include<stdio.h>
+#include<iostream.h>
+
+void sum(int a,int b );
+void sub(int a,int b);
+void mul(int a,int b );
+//void div(int a,int b );
+void arect(float a,float b);
+void asqr(float a);
+void acircle(float r);
+void atriangle(float a,float b);
+void aparallelogram(float b,float h);
+void aellipse(float r1,float r2);
+void vcube(float a);
+void asphere(float r);
+void psqr(int a);
+void ccircle(int r);
+//void pparallelogram(int a,int b );
+int main()
+{
+	clrscr();
+	sum(10,20);
+    sub(30,20);
+    mul(10,4);
+    //div(17,5);
+    arect(6,8);
+    asqr(7);
+    acircle(5);
+    atriangle(8,5);
+    aparallelogram(5,9);
+    aellipse(7,5);
+    vcube(6);
+    asphere(8);
+    psqr(6);
+    ccircle(7);
+  //  pparallelogram(6,5);*/
+    getch();
+   
+}
+void sum(int a,int b )
+{ 
+//int a= 10,b= 20;
+int c= a+b;
+cout<<"Addition is :"<<c<<endl;
+}
+void sub(int a,int b)
+{ 
+//int a= 130,b= 120;
+int c= a-b;
+cout<<"substraction  is :"<<c<<endl;
+}
+void mul(int a,int b )
+{ 
+//int a= 10,b= 20;
+int c= a*b;
+cout<<" Multiplication is :"<<c<<endl;
+}
+/*void div(int a,int b)
+{ 
+//int a= 17,b= 2;
+float  c;
+c=a/b;
+cout<<"Division  is :"<<c<<endl;
+return 0;
+}*/
+void arect(float l,float b)
+{ 
+//int l= 10,b= 20;
+int A= l*b;
+cout<<"Area of rectangle is :"<<A<<endl;
+}
+void asqr(float a)
+{ 
+//int a= 10;
+int A=a*a;
+cout<<"Area of square is :"<<A<<endl;
+}
+void acircle(float r)
+{ 
+//int r=8;
+float A=3.14*r*r;
+cout<<"Area of circle  is :"<<A<<endl;
+}
+void atriangle(float b,float h)
+{ 
+//int b= 10,h= 20;
+float A= 0.5*b*h;
+cout<<"Area of triange is :"<<A<<endl;
+}
+void aparallelogram(float b,float h)
+{ 
+//int b= 10,h= 20;
+int A= b*h;
+cout<<"Area of parallelogram is :"<<A<<endl;
+}
+void aellipse(float r1,float r2)
+{ 
+//int r1= 10,r2= 20;
+float A= 3.14*r1*r2;
+cout<<"Area of ellipse is :"<<A<<endl;
+}
+void vcube(float a)
+{ 
+//int a= 10;
+int V= a*a*a;;
+cout<<"Volunme of cube  is :"<<V<<endl;
+}
+void asphere(float r)
+{ 
+//int r=10;
+float A= 4*3.14*r*r;
+cout<<"Area of sphere  is :"<<A<<endl;
+}
+void psqr(int a)
+{ 
+//int a= 10;
+int P= 4*a;
+cout<<"Perimeter of square  is :"<<P<<endl;
+}
+void ccircle(int r)
+{ 
+//int r=8;
+float C= 2*3.14*r;
+cout<<"Circumference of circle is :"<<C<<endl;
+}
+/*void pparallelogram(int a,int b )
+{ 
+//int a= 10,b= 20;
+int P= 2*(a+b);
+cout<<"Perimeter of parallelogram is :"<<P<<endl;
+}*/
