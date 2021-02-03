@@ -1,0 +1,129 @@
+#include<conio.h>
+#include<stdio.h>
+#include<iostream.h>
+void sum();
+void sub();
+void mul();
+void div();
+void arect();
+void asqr();
+void acircle();
+void atriangle();
+void aparallelogram();
+void aellipse();
+void vcube();
+void asphere();
+void psqr();
+void ccircle();
+void pparallelogram();
+void main()
+{
+	clrscr();
+	sum();
+    sub();
+    mul();
+    div();
+    arect();
+    asqr();
+    acircle();
+    atriangle();
+    aparallelogram();
+    aellipse();
+    vcube();
+    asphere();
+    psqr();
+    ccircle();
+    pparallelogram();
+    getch();
+   
+}
+void sum()
+{ 
+int a= 10,b= 20;
+int c= a+b;
+cout<<"Addition is :"<<c<<endl;
+}
+void sub()
+{ 
+int a= 130,b= 120;
+int c= a-b;
+cout<<"substraction  is :"<<c<<endl;
+}
+void mul()
+{ 
+int a= 10,b= 20;
+int c= a*b;
+cout<<" Multiplication is :"<<c<<endl;
+}
+void div()
+{ 
+int a= 17,b= 2;
+float c= a/b;
+cout<<"Division  is :"<<c<<endl;
+}
+void arect()
+{ 
+int l= 10,b= 20;
+int A= l*b;
+cout<<"Area of rectangle is :"<<A<<endl;
+}
+void asqr()
+{ 
+int a= 10;
+int A=a*a;
+cout<<"Area of square is :"<<A<<endl;
+}
+void acircle()
+{ 
+int r=8;
+float A=3.14*r*r;
+cout<<"Area of circle  is :"<<A<<endl;
+}
+void atriangle()
+{ 
+int b= 10,h= 20;
+float A= 0.5*b*h;
+cout<<"Area of triange is :"<<A<<endl;
+}
+void aparallelogram()
+{ 
+int b= 10,h= 20;
+int A= b*h;
+cout<<"Area of parallelogram is :"<<A<<endl;
+}
+void aellipse()
+{ 
+int r1= 10,r2= 20;
+float A= 3.14*r1*r2;
+cout<<"Area of ellipse is :"<<A<<endl;
+}
+void vcube()
+{ 
+int a= 10;
+int V= a*a*a;;
+cout<<"Volunme of cube  is :"<<V<<endl;
+}
+void asphere()
+{ 
+int r=10;
+float A= 4*3.14*r*r;
+cout<<"Area of sphere  is :"<<A<<endl;
+}
+void psqr()
+{ 
+int a= 10;
+int P= 4*a;
+cout<<"Perimeter of square  is :"<<P<<endl;
+}
+void ccircle()
+{ 
+int r=8;
+float C= 2*3.14*r;
+cout<<"Circumference of circle is :"<<C<<endl;
+}
+void pparallelogram()
+{ 
+int a= 10,b= 20;
+int P= 2*(a+b);
+cout<<"Perimeter of parallelogram is :"<<P<<endl;
+}
