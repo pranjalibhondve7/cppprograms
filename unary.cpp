@@ -5,33 +5,30 @@ class unarydemo
 {
 	public :
 	int a,b;
-	
-	void set(int x,int y){
-	a=x;
-	b=y;	
-	
+	void get(){
+		cout<<"Enter value of a : ";
+		cin>>a;
+		cout<<"Enter value of b : ";
+		cin>>b;
 	}
-	void operator -()
+	void operator +()
 	{
-		a=-a;
-		b=-b;
+		++a;
+	     b++;
 	}
 	void display (){
 		cout<<"a is :" <<a<<endl;
-		cout<<"b is :"<<b<<endl;
+    	cout<<"b is :"<<b<<endl;
 	}
 };
  void main ()
  {
  	clrscr();
  	unarydemo ob;
- 	ob.set(-4,7);
- 	-ob;
+ 	ob.get();
+ 
+ 	+ob;
  	ob.display();
- //	ob2.set();
-// 	+ob2;
- 	//ob1.display;
- 	//ob2.display();
- 	//ob3=ob1+ob2;
+ 	
  	getch();
  }
