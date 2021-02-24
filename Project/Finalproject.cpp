@@ -13,7 +13,7 @@ class project
     char un[10],pas[10],quest [5][100];
 	char option1 [3][20],option2 [3][20],
     option3 [3][50],option4 [3][50],option5 [3][50];
-    int ch,x,y,response[5], correct_ans[5], option,i, marks, options;
+    int ch,x,y,response[5], correct_ans[5], option,i, marks=0, options;
 	string fname,lname,name,last,email,user,password;
 	
     void username();
@@ -199,11 +199,21 @@ void project::question()
 			{
 				cout<<"\n\n************* CHECK THE CORRECT ANSWERS ***************";   
 	            cout<<"\n --------------------------------------------------------"<<endl;   
-	            cout<<quest[0]<<endl<<option1[correct_ans[0]]<<endl<<endl;   
-	            cout<<quest[1]<<endl<<option2[correct_ans[1]]<<endl<<endl;   
-			    cout<<quest[2]<<endl<<option3[correct_ans[2]]<<endl<<endl;   
-		        cout<<quest[3]<<endl<<option4[correct_ans[3]]<<endl<<endl;   
-		        cout<<quest[4]<<endl<<option5[correct_ans[4]]<<endl<<endl;   
+	            cout<<quest[0]<<endl<<"Correct ans is :"<<option1[correct_ans[0]]<<endl;
+				cout<<"Your enter ans is : "<<response[0]<<endl; 
+				cout<<"-------------------------------------------------------------"<<endl;  
+	            cout<<quest[1]<<endl<<"Correct ans is :"<<option2[correct_ans[1]]<<endl<<endl;
+				cout<<"Your enter ans is: "<<response[1]<<endl;  
+				cout<<"--------------------------------------------------------------"<<endl;   
+			    cout<<quest[2]<<endl<<"Correct ans is :"<<option3[correct_ans[2]]<<endl<<endl;  
+				cout<<"Your enter ans is: "<<response[2]<<endl;   
+				cout<<"---------------------------------------------------------------"<<endl;
+		        cout<<quest[3]<<endl<<"Correct ans is :"<<option4[correct_ans[3]]<<endl<<endl;
+				cout<<"Your enter ans is: "<<response[3]<<endl;  
+				cout<<"---------------------------------------------------------------"<<endl;   
+		        cout<<quest[4]<<endl<<"Correct ans is :"<<option5[correct_ans[4]]<<endl<<endl;
+				cout<<"Your enter ans is: "<<response[4]<<endl;
+				cout<<"----------------------------------------------------------------"<<endl;     
 		           //system("cls");   
 	             
 			}
@@ -227,6 +237,7 @@ void project::question()
 }
         while(option!=4);
          getch();
+         //exit();
 }
 int main()
 {
